@@ -1,50 +1,28 @@
-# Ronber Jonathan T. Prado - G01
+### Ronber Jonathan T. Prado - G01
 
-# C PROGRAM
+### C PROGRAM
+Vector Size | Execution Time (microseconds)  
+2^20 | 6.700000  
+2^24 | 98.000000  
+2^28 | 1351.500000  
 
-# Vector Size
-# Execution Time (microseconds)
-# 2^20
-# 6.700000
-# 2^24
-# 98.000000
-# 2^28
-# 1351.500000
+### C PROGRAM RATE OF INCREASE BY VECTOR SIZE
+Vector Size | Execution Time (microseconds)  
+2^20 to 2^24 | 14.62686567  
+2^24 to 2^28 | 13.79081633  
 
-# # C PROGRAM RATE OF INCREASE BY VECTOR SIZE
+### C PROGRAM RATE OF INCREASE VS x86 VS SIMD
+PROGRAM (2^20 VECTOR) | Rate of Increase in Execution Time  
+C to x86-64 | 0.5721392537  
+C to SIMD | 0.1641791045  
 
-# Vector Size
-# Rate of Increase in Execution Time
-# 2^20 to 2^24
-# 14.62686567
-# 2^24 to 2^28
-# 13.79081633
+### PROGRAM (2^24 VECTOR) | Rate of Increase in Execution Time
+C to x86-64 | 0.543877551  
+C to SIMD | 0.1894557857  
 
-
-# C PROGRAM RATE OF INCREASE VS x86 VS SIMD
-
-# PROGRAM (2^20 VECTOR)
-# Rate of Increase in Execution Time
-# C to x86-64
-# 0.5721392537
-# C to SIMD
-# 0.1641791045
-
-
-# PROGRAM (2^24 VECTOR)
-# Rate of Increase in Execution Time
-# C to x86-64
-# 0.543877551
-# C to SIMD
-# 0.1894557857
-
-
-# PROGRAM (2^28 VECTOR)
-# Rate of Increase in Execution Time
-# C to x86-64
-# 0.6300406955
-# C to SIMD
-# 0.2237760511
+### PROGRAM (2^28 VECTOR) | Rate of Increase in Execution Time
+C to x86-64 | 0.6300406955  
+C to SIMD | 0.2237760511  
 
 
 
