@@ -1,6 +1,6 @@
-# # Ronber Jonathan T. Prado - G01
+# Ronber Jonathan T. Prado - G01
 
-# # C PROGRAM
+# C PROGRAM
 
 # Vector Size
 # Execution Time (microseconds)
