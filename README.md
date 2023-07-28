@@ -56,59 +56,37 @@ The x86-64 program was run thirty times, and the execution time increased by a f
 
 ### x86 SIMD PROGRAM
 Vector Size | Execution Time (microseconds)  
-# 2^20
-# 1.100000
-# 2^24
-# 18.566667
-# 2^28
-# 302.433333
+2^20 | 1.100000  
+2^24 | 18.566667  
+2^28 | 302.433333  
 
+### x86 SIMD PROGRAM RATE OF INCREASE BY VECTOR SIZE
+Vector Size | Rate of Increase in Execution Time  
+2^20 to 2^24 | 16.87878818  
+2^24 to 2^28 | 16.28904816  
 
-# x86 SIMD PROGRAM RATE OF INCREASE BY VECTOR SIZE
+### x86 SIMD PROGRAM RATE OF INCREASE VS C VS x86
+PROGRAM (2^20 VECTOR) | Rate of Increase in Execution Time  
+SIMD to C | 6.090909091  
+SIMD to x86-64 | 3.484848182  
 
-# Vector Size
-# Rate of Increase in Execution Time
-# 2^20 to 2^24
-# 16.87878818
-# 2^24 to 2^28
-# 16.28904816
+PROGRAM (2^24 VECTOR) | Rate of Increase in Execution Time  
+SIMD to C | 5.278276386  
+SIMD to x86-64 | 2.870736035  
 
+PROGRAM (2^28 VECTOR) | Rate of Increase in Execution Time  
+SIMD to C | 4.468753449  
+SIMD to x86-64 | 2.815496531  
 
-# x86 SIMD PROGRAM RATE OF INCREASE VS C VS x86
+### ANALYSIS OF x86 SIMD PROGRAM
+The x86 SIMD program was run thirty times, and the execution time increased by a factor of 16.289 to 16.879 when the vector size increased by a factor of 4. The rate of increase was calculated using the formula final execution time / initial execution time. The rate of increase in execution time of SIMD to C is 4.469 to 6.091. On the other hand, for SIMD to x86-64, the rate is increased by 2.815 to 3.485. Based on the results, the SIMD program is faster than both the C program and x86-64 program. This is due to the feature of SIMD program wherein multiple operations are performed in parallel. It is faster than C because of fewer overheads and a lower-level assembly language. It is also faster than x86 because the operations were performed in parallel.  
 
-# PROGRAM (2^20 VECTOR)
-# Rate of Increase in Execution Time
-# SIMD to C
-# 6.090909091
-# SIMD to x86-64
-# 3.484848182
+### SCREENSHOT OF THE PROGRAM OUTPUT WITH CORRECTNESS CHECK (C)
 
+### SCREENSHOT OF THE PROGRAM OUTPUT INCLUDING CORRECTNESS CHECK (X86-64)
 
-# PROGRAM (2^24 VECTOR)
-# Rate of Increase in Execution Time
-# SIMD to C
-# 5.278276386
-# SIMD to x86-64
-# 2.870736035
+### SCREENSHOT OF THE PROGRAM OUTPUT INCLUDING CORRECTNESS CHECK (SIMD YMM REGISTER)
 
-
-# PROGRAM (2^28 VECTOR)
-# Rate of Increase in Execution Time
-# SIMD to C
-# 4.468753449
-# SIMD to x86-64
-# 2.815496531
-
-# ANALYSIS OF x86 SIMD PROGRAM
-# The x86 SIMD program was run thirty times, and the execution time increased by a factor of 16.289 to 16.879 when the vector size increased by a factor of 4. The rate of increase was calculated using the formula final execution time / initial execution time. The rate of increase in execution time of SIMD to C is 4.469 to 6.091. On the other hand, for SIMD to x86-64, the rate is increased by 2.815 to 3.485. Based on the results, the SIMD program is faster than both the C program and x86-64 program. This is due to the feature of SIMD program wherein multiple operations are performed in parallel. It is faster than C because of fewer overheads and a lower-level assembly language. It is also faster than x86 because the operations were performed in parallel.
-
-
-# SCREENSHOT OF THE PROGRAM OUTPUT WITH CORRECTNESS CHECK (C)
-
-# SCREENSHOT OF THE PROGRAM OUTPUT INCLUDING CORRECTNESS CHECK (X86-64)
-
-# SCREENSHOT OF THE PROGRAM OUTPUT INCLUDING CORRECTNESS CHECK (SIMD YMM REGISTER)
-
-# SCREENSHOT OF THE PROGRAM OUTPUT INCLUDING CORRECTNESS CHECK (CUDA, OPTIONAL)
+### SCREENSHOT OF THE PROGRAM OUTPUT INCLUDING CORRECTNESS CHECK (CUDA, OPTIONAL)
 
 
