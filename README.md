@@ -82,6 +82,7 @@ SIMD to x86-64 | 2.815496531
 The x86 SIMD program was run thirty times, and the execution time increased by a factor of 16.289 to 16.879 when the vector size increased by a factor of 4. The rate of increase was calculated using the formula final execution time / initial execution time. The rate of increase in execution time of SIMD to C is 4.469 to 6.091. On the other hand, for SIMD to x86-64, the rate is increased by 2.815 to 3.485. Based on the results, the SIMD program is faster than both the C program and x86-64 program. This is due to the feature of SIMD program wherein multiple operations are performed in parallel. It is faster than C because of fewer overheads and a lower-level assembly language. It is also faster than x86 because the operations were performed in parallel.  
 
 ### SCREENSHOT OF THE PROGRAM OUTPUT WITH CORRECTNESS CHECK (C)
+![C - correctness output](https://github.com/jonaprado/stencil-project/assets/92654347/d06029db-c8c9-4a4f-8d8e-75c268a32992)
 
 ### SCREENSHOT OF THE PROGRAM OUTPUT INCLUDING CORRECTNESS CHECK (X86-64)
 
