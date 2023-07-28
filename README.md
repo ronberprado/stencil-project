@@ -43,28 +43,19 @@ PROGRAM (2^20 VECTOR) | Rate of Increase in Execution Time
 x86-64 to C | 1.747826239  
 x86-64 to SIMD | 0.2869565467  
 
-# PROGRAM (2^24 VECTOR)
-# Rate of Increase in Execution Time
-# x86-64 to C
-# 1.838649156
-# x86-64 to SIMD
-# 0.3483427205
+### PROGRAM (2^24 VECTOR) | Rate of Increase in Execution Time
+x86-64 to C | 1.838649156  
+x86-64 to SIMD | 0.3483427205  
 
+### PROGRAM (2^28 VECTOR) | Rate of Increase in Execution Time
+x86-64 to C | 1.58719906  
+x86-64 to SIMD | 0.2237760511  
 
-# PROGRAM (2^28 VECTOR)
-# Rate of Increase in Execution Time
-# x86-64 to C
-# 1.58719906
-# x86-64 to SIMD
-# 0.2237760511
+### ANALYSIS OF x86-64 PROGRAM
+The x86-64 program was run thirty times, and the execution time increased by a factor of 13.9 to 15.98 when the vector size increased by a factor of 4. The rate of increase was calculated using the formula final execution time / initial execution time. The rate of increase in execution time of x86-64 to C is 1.587 to 1.839. On the other hand, for x86-64 to SIMD, the rate is increased by 0.224 to 0.348. Based on the results, the x86 program is faster than the C program but slower than SIMD. This is due to x86 being a lower-level language than C that has more overheads which are discussed in the Analysis of C Program above. It is slower than the SIMD program because of the parallel computing feature of SIMD.  
 
-# ANALYSIS OF x86-64 PROGRAM
-# The x86-64 program was run thirty times, and the execution time increased by a factor of 13.9 to 15.98 when the vector size increased by a factor of 4. The rate of increase was calculated using the formula final execution time / initial execution time. The rate of increase in execution time of x86-64 to C is 1.587 to 1.839. On the other hand, for x86-64 to SIMD, the rate is increased by 0.224 to 0.348. Based on the results, the x86 program is faster than the C program but slower than SIMD. This is due to x86 being a lower-level language than C that has more overheads which are discussed in the Analysis of C Program above. It is slower than the SIMD program because of the parallel computing feature of SIMD.
-
-# x86 SIMD PROGRAM
-
-# Vector Size
-# Execution Time (microseconds)
+### x86 SIMD PROGRAM
+Vector Size | Execution Time (microseconds)  
 # 2^20
 # 1.100000
 # 2^24
