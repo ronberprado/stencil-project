@@ -1,30 +1,3 @@
-### C PROGRAM
-Vector Size | Execution Time (microseconds)  
-2^20 | 6.700000  
-2^24 | 98.000000  
-2^28 | 1351.500000  
-
-### C PROGRAM RATE OF INCREASE BY VECTOR SIZE
-Vector Size | Execution Time (microseconds)  
-2^20 to 2^24 | 14.62686567  
-2^24 to 2^28 | 13.79081633  
-
-### C PROGRAM RATE OF INCREASE VS x86 VS SIMD
-PROGRAM (2^20 VECTOR) | Rate of Increase in Execution Time  
-C to x86-64 | 0.5721392537  
-C to SIMD | 0.1641791045  
-
-### PROGRAM (2^24 VECTOR) | Rate of Increase in Execution Time
-C to x86-64 | 0.543877551  
-C to SIMD | 0.1894557857  
-
-### PROGRAM (2^28 VECTOR) | Rate of Increase in Execution Time
-C to x86-64 | 0.6300406955  
-C to SIMD | 0.2237760511  
-
-### ANALYSIS OF C PROGRAM
-The C program was run thirty times, and the execution time increased by a factor of 13.791 to 14.627 when the vector size increased by a factor of 4. The rate of increase was calculated using the formula final execution time / initial execution time. The rate of increase in execution time of C to x86-64 is 0.544 to 0.630. On the other hand, for C to SIMD, the rate is increased by 0.164 to 0.224. Because the rate of increase in execution time is less than 1, it means that the C program is slower than both x86 and SIMD. This is due to overheads of the C language because it is a higher-level language compared to the low-level assembly language. There are some abstractions to make the code readable and the user does not directly access the memory registers which results in additional computing cost.  
-
 ### x86-64 PROGRAM
 Vector Size | Execution Time (microseconds)  
 2^20 | 3.833333  
