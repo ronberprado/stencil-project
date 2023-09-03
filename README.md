@@ -1,5 +1,3 @@
-### Ronber Jonathan T. Prado - G01
-
 ### C PROGRAM
 Vector Size | Execution Time (microseconds)  
 2^20 | 6.700000  
