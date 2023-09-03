@@ -87,5 +87,3 @@ The x86 SIMD program was run thirty times, and the execution time increased by a
 
 ### SCREENSHOT OF THE PROGRAM OUTPUT INCLUDING CORRECTNESS CHECK (SIMD YMM REGISTER)
 ![x86 SIMD - correctness output](https://github.com/jonaprado/stencil-project/assets/92654347/9634cbd0-8680-4694-a391-a0c32b232f38)
-
-aa
